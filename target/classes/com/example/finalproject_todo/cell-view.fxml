@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="80.0" prefWidth="258.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="iconImageview" fitHeight="38.0" fitWidth="38.0" layoutX="3.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/icons8-tasks-40.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="taskLabel" layoutX="48.0" layoutY="8.0" prefHeight="17.0" prefWidth="228.0" text="Task" textFill="WHITE" />
+      <Label fx:id="descriptionLabel" layoutX="48.0" layoutY="26.0" prefHeight="31.0" prefWidth="219.0" style="-fx-background-color: white;" text="Description">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" alignment="CENTER_RIGHT" layoutX="150.0" layoutY="61.0" prefHeight="18.0" prefWidth="117.0" text="Date Created" textFill="WHITE" />
+      <ImageView fx:id="deleteButton" fitHeight="25.0" fitWidth="15.0" layoutX="255.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/icons8-trash-can-30.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

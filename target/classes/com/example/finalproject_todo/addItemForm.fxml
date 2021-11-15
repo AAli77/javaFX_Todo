@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #80e8dd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject_todo.AddItemFormController">
+   <children>
+      <TextField fx:id="taskField" layoutX="192.0" layoutY="110.0" onAction="#taskField" prefHeight="43.0" prefWidth="382.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="descriptionField" layoutX="192.0" layoutY="160.0" onAction="#taskDescription" prefHeight="43.0" prefWidth="382.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="saveTaskButton" layoutX="281.0" layoutY="214.0" prefHeight="39.0" prefWidth="207.0" style="-fx-background-color: #00867d;" text="Save Task" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="85.0" layoutY="125.0" text="Task">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="176.0" text="Description">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="-1.0" prefHeight="77.0" prefWidth="706.0" style="-fx-background-color: #4bb5ab;">
+         <children>
+            <Label alignment="CENTER" layoutX="239.0" layoutY="25.0" prefHeight="17.0" prefWidth="228.0" text="To-do">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="todoButton" alignment="CENTER_RIGHT" layoutX="564.0" layoutY="274.0" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #00867d;" textFill="WHITE" visible="false" />
+      <Label fx:id="successLabel" layoutX="477.0" layoutY="76.0" prefHeight="21.0" prefWidth="228.0" text="Sussessfully saved, add new iteam" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

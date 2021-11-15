@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="702.0" style="-fx-background-color: #80e8dd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject_todo.ListviewController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="77.0" prefWidth="700.0" style="-fx-background-color: #4bb5ab;">
+         <children>
+            <Label alignment="CENTER" layoutX="239.0" layoutY="25.0" prefHeight="17.0" prefWidth="228.0" text="My To-do's">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXListView fx:id="listTasks" layoutX="205.0" layoutY="80.0" prefHeight="316.0" prefWidth="292.0" style="-fx-background-color: #ECECEC;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXListView>
+      <AnchorPane layoutX="11.0" layoutY="80.0" prefHeight="316.0" prefWidth="384.0" style="-fx-background-color: #4bb5ab;" visible="false">
+         <children>
+            <TextField fx:id="taskField" layoutX="97.0" layoutY="70.0" onAction="#taskField" prefHeight="43.0" prefWidth="269.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="descriptionField" layoutX="97.0" layoutY="120.0" onAction="#taskDescription" prefHeight="43.0" prefWidth="269.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="saveTaskButton" layoutX="97.0" layoutY="177.0" prefHeight="39.0" prefWidth="269.0" style="-fx-background-color: #00867d;" text="Save Task" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="15.0" layoutY="85.0" text="Task">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="136.0" text="Description">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="list2Task" layoutX="402.0" layoutY="80.0" prefHeight="316.0" prefWidth="292.0" visible="false" />
+   </children>
+</AnchorPane>

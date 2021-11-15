@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #4bb5ab;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject_todo.LoginController">
+   <children>
+      <AnchorPane layoutY="80.0" prefHeight="320.0" prefWidth="701.0" style="-fx-background-color: #80e8dd;">
+         <children>
+            <TextField fx:id="loginUsername" layoutX="189.0" layoutY="119.0" prefHeight="25.0" prefWidth="342.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="loginPassword" layoutX="189.0" layoutY="175.0" prefHeight="25.0" prefWidth="342.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <JFXButton fx:id="loginButton" layoutX="185.0" layoutY="243.0" prefHeight="25.0" prefWidth="342.0" style="-fx-background-color: #00857c;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="82.0" fitWidth="131.0" layoutX="310.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/icons8-user-shield-80.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="135.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/icons8-administrator-male-80.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="135.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/icons8-password-80.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="230.0" layoutY="14.0" prefHeight="17.0" prefWidth="242.0" text="To Do">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="loginSignupButton" layoutX="598.0" layoutY="14.0" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #00857c;" text="Signup" textFill="WHITE" />
+   </children>
+</AnchorPane>

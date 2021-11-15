@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAncherPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #80e8dd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject_todo.AddItemController">
+   <children>
+      <AnchorPane prefHeight="77.0" prefWidth="706.0" style="-fx-background-color: #4bb5ab;">
+         <children>
+            <Label alignment="CENTER" layoutX="239.0" layoutY="25.0" prefHeight="17.0" prefWidth="228.0" text="To-do">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="17.0" text="Welcome" textFill="WHITE" />
+            <Label fx:id="lblName" layoutX="14.0" layoutY="41.0" text="firstname, lastname" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="noTaskLabel" alignment="CENTER" layoutX="157.0" layoutY="140.0" prefHeight="17.0" prefWidth="394.0" text="No Task for Today">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="addButton" fitHeight="67.0" fitWidth="63.0" layoutX="322.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/icons8-add-80.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
